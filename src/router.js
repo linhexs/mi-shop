@@ -9,7 +9,7 @@ import Detail from './pages/detail'
 import OrderList from './pages/orderList'
 import OrderConfirm from './pages/orderConfirm'
 import OrderPay from './pages/orderPay'
-import AliPay from './pages/aliPay'
+import AliPay from './pages/alipay'
 Vue.use(Router)
 
 export default new Router({
