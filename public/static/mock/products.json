@@ -1,0 +1,89 @@
+{
+    "status": 0,
+    "data": {
+        "pageNum": 1,
+        "pageSize": 10,
+        "size": 7,
+        "orderBy": null,
+        "startRow": 1,
+        "endRow": 2,
+        "total": 2,
+        "pages": 1,
+        "list": [
+            {
+                "id": 1,
+                "categoryId": 2,
+                "name": "iphone7",
+                "subtitle": "双十一促销",
+                "mainImage": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90",
+                "status":1,
+                "price": 7199.22
+            },
+            {
+                "id": 2,
+                "categoryId": 2,
+                "name": "小米9 Pro 5G",
+                "subtitle": "oppo促销进行中",
+                "mainImage": "//cdn.cnbj1.fds.api.mi-img.com/mi-mall/41c566d825a3ae3b5751a78d4c7cffdb.png?thumb=1&w=160&h=110&f=webp&q=90",
+                "status":1,
+                "price": 3699
+            },
+            {
+                "id": 3,
+                "categoryId": 2,
+                "name": "oppo R8",
+                "subtitle": "oppo促销进行中",
+                "mainImage": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90",
+                "status":1,
+                "price": 2999.11
+            },
+            {
+                "id": 4,
+                "categoryId": 2,
+                "name": "oppo R8",
+                "subtitle": "oppo促销进行中",
+                "mainImage": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90",
+                "status":1,
+                "price": 2999.11
+            }, {
+                "id": 5,
+                "categoryId": 2,
+                "name": "oppo R8",
+                "subtitle": "oppo促销进行中",
+                "mainImage": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90",
+                "status":1,
+                "price": 2999.11
+            },
+            {
+                "id": 6,
+                "categoryId": 2,
+                "name": "oppo R8",
+                "subtitle": "oppo促销进行中",
+                "mainImage": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90",
+                "status":1,
+                "price": 2999.11
+            },
+            {
+                "id": 7,
+                "categoryId": 2,
+                "name": "oppo R8",
+                "subtitle": "oppo促销进行中",
+                "mainImage": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90",
+                "status":1,
+                "price": 2999.11
+            }        
+        ],
+        "firstPage": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "lastPage": 1,
+        "isFirstPage": true,
+        "isLastPage": true,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 8,
+        "navigatepageNums": [
+            1
+        ]
+    }
+}
