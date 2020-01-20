@@ -71,6 +71,15 @@
                 "mainImage": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90",
                 "status":1,
                 "price": 2999.11
+            },   
+            {
+                "id": 8,
+                "categoryId": 2,
+                "name": "oppo R8",
+                "subtitle": "oppo促销进行中",
+                "mainImage": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/be92bc4baa572bf467fc9e881fd4be2a.png?thumb=1&w=160&h=110&f=webp&q=90",
+                "status":1,
+                "price": 2999.11
             }        
         ],
         "firstPage": 1,
