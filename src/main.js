@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueLazyLoad from 'vue-lazyload'
 // import env from './env'
 
 axios.defaults.baseURL = '/static/mock/';
@@ -19,8 +20,11 @@ axios.interceptors.response.use(function(response){
     alert(res.msg);
   }
 })
-Vue.use(VueAxios,axios)
-Vue.config.productionTip = false
+Vue.use(VueAxios,axios);
+Vue.use(VueLazyLoad,{
+  loading: '/imgs/loading-svg/loading-bars.svg'
+});
+Vue.config.productionTip = false;
 
 
 new Vue({
