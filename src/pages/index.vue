@@ -11,7 +11,7 @@
                   <ul v-for="(item,index) in menuList" :key="index">
                     <li v-for="(sub,j) in item" :key="j">
                       <a v-bind:href="sub?'/#/product/'+sub.id :''">
-                        <img  v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
+                        <img v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
                         {{sub?sub.name:'小米9'}}
                       </a>
                     </li>
@@ -44,7 +44,7 @@
           <swiper :options="swiperOption">
             <swiper-slide v-for="(item, index) in slideList" :key="index">
               <a v-bind:href="'/#/product/' + item.id">
-                <img  v-lazy="item.img" />
+                <img :src="item.img" />
               </a>
             </swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
@@ -156,6 +156,14 @@ export default {
         {
           id: "46",
           img: "/imgs/slider/slide-3.jpg"
+        },
+        {
+          id: "47",
+          img: "/imgs/slider/slide-4.jpg"
+        },
+        {
+          id: "48",
+          img: "/imgs/slider/slide-5.jpg"
         }
       ],
       menuList: [
@@ -219,6 +227,7 @@ export default {
           categoryId:2,
         }
       }).then((res)=>{
+        res.list = res.list.slice(6,14);
         this.phoneList = [res.list.slice(0,4),res.list.slice(4,8)]
       })
     },
@@ -341,9 +350,14 @@ export default {
       display: flex;
       .banner-left {
         margin-right: 16px;
+        transition: all .2s linear;
         img {
           width: 224px;
           height: 619px;
+        }
+        &:hover{
+           transform: translate3d(0,-2px,0);
+           box-shadow: 0 15px 30px rgba(0,0,0,.1);
         }
       }
       .list-box {
@@ -355,10 +369,17 @@ export default {
             margin-bottom: 0;
           }
           .item {
+            cursor:pointer;
             width: 236px;
             height: 302px;
             background-color: $colorG;
             text-align: center;
+            cursor:pointer;
+            transition: all .2s linear;
+            &:hover{
+              transform: translate3d(0,-2px,0);
+              box-shadow: 0 15px 30px rgba(0,0,0,.1);
+            }
             span {
               display: inline-block;
               width: 67px;
@@ -375,8 +396,8 @@ export default {
             }
             .item-img {
               img {
-                width: 100%;
-                height: 195px;
+                width: 160px;
+                height: 160px;
               }
             }
             .item-info{

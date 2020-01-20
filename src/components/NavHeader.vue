@@ -29,7 +29,7 @@
                                 <li class="product" v-for="(item,index) in phoneList" :key="index">
                                     <a v-bind:href="'/#/product/'+item.id" target="_blank">
                                         <div class="pro-img">
-                                           <img  v-lazy="item.mainImage" alt=""> 
+                                           <img v-lazy="item.mainImage" alt=""> 
                                         </div>
                                         <div class="pro-name">{{item.name}}</div>
                                         <div class="pro-price">{{item.price|currency}}</div>
@@ -48,7 +48,7 @@
                 <div class="header-search">
                     <div class="wrapper">
                         <input type="text" name="keyword">
-                        <a href="javascript::;"></a>
+                        <a href="javascript:;"></a>
                     </div>
                 </div>
             </div>
@@ -233,7 +233,8 @@ export default {
                     }
                 }
                 .header-search{
-                    width: 319px;
+                    width:319px;
+                    cursor: pointer;
                     .wrapper{
                         height: 50px;
                         border: 1px solid #E0E0E0;
