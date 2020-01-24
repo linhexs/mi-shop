@@ -26,6 +26,9 @@
       width:24.9%;
       text-align:center;
       border-right:1px solid #E5E5E5;
+      &:last-child{
+        border-right:0px;
+      }
       span{
         display:inline-block;
         width:20px;
