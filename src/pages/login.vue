@@ -1,8 +1,5 @@
 <template>
   <div class="login">
-    <div class="container">
-      <a href="/#/index"><img src="/imgs/login-logo.png" alt=""></a>
-    </div>
     <div class="wrapper">
       <div class="container">
         <div class="login-form">
@@ -27,12 +24,12 @@
     </div>
     <div class="footer">
       <div class="footer-link">
-        <a href="javascript:;" target="_blank">其他项目</a><span>|</span>
-        <a href="javascript:;" target="_blank">其他项目</a><span>|</span>
-        <a href="javascript:;" target="_blank">其他项目</a><span>|</span>
-        <a href="javascript:;" target="_blank">其他项目</a>
+        <a href="javascript:;">其他项目</a><span>|</span>
+        <a href="javascript:;">其他项目</a><span>|</span>
+        <a href="javascript:;">其他项目</a><span>|</span>
+        <a href="javascript:;">其他项目</a>
       </div>
-      <p class="copyright">Copyright ©2019 mi.futurefe.com All Rights Reserved.</p>
+      <p class="copyright">Copyright ©2020</p>
     </div>
   </div>
 </template>
@@ -79,13 +76,6 @@ export default {
 </script>
 <style lang="scss">
 .login{
-  &>.container{
-    height:113px;
-    img{
-      width:auto;
-      height:100%;
-    }
-  }
   .wrapper{
     background:url('/imgs/login-bg.jpg') no-repeat center;
     .container{

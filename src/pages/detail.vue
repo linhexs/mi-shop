@@ -38,7 +38,7 @@
           </div>
           <div class="item-total">
             <div class="phone-info clearfix">
-              <div class="fl">{{product.name}} {{version==1?'6GB+64GB 全网通':'6GB+64GB 移动4G'}} 深灰色</div>
+              <div class="fl">{{product.name}} {{version==1?'6GB+64GB 全网通':'4GB+64GB 移动4G'}} 深灰色</div>
               <div class="fr">{{product.price}}元</div>
             </div>
             <div class="phone-total">总计：{{product.price}}元</div>

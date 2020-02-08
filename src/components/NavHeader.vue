@@ -11,7 +11,7 @@
           <a href="javascript:;" v-if="!username" @click="login">登录</a>
           <a href="javascript:;" v-if="username" @click="logout">退出</a>
           <a href="javascript:;" v-if="username">我的订单</a>
-          <a href="javascript:;" class="my-cart" @click="goToCard">
+          <a href="javascript:;" class="my-cart">
             <span class="icon-cart"></span>
             购物车({{cartCount}})
           </a>
@@ -42,9 +42,35 @@
           </div>
           <div class="item-menu">
             <span>RedMi红米</span>
+            <div class="children">
+              <ul>
+                <li class="product" v-for="(item,index) in phoneList" :key="index">
+                  <a v-bind:href="'/#/product/'+item.id" target="_blank">
+                    <div class="pro-img">
+                      <img v-lazy="item.mainImage" alt />
+                    </div>
+                    <div class="pro-name">{{item.name}}</div>
+                    <div class="pro-price">{{item.price|currency}}</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="item-menu">
             <span>电视</span>
+            <div class="children">
+              <ul>
+                <li class="product" v-for="(item,index) in phoneList" :key="index">
+                  <a v-bind:href="'/#/product/'+item.id" target="_blank">
+                    <div class="pro-img">
+                      <img v-lazy="item.mainImage" alt />
+                    </div>
+                    <div class="pro-name">{{item.name}}</div>
+                    <div class="pro-price">{{item.price|currency}}</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="header-search">
@@ -119,9 +145,9 @@ export default {
         this.$store.dispatch("saveCartCount", "0");
       });
     },
-    goToCard() {
-      this.$router.push("/cart");
-    }
+    // goToCard() {
+    //   this.$router.push("/cart");
+    // }
   }
 };
 </script>

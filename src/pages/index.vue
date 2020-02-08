@@ -20,24 +20,94 @@
               </li>
               <li class="menu-item">
                 <a href="javascript:;">电视 盒子</a>
+                 <div class="children">
+                  <ul v-for="(item,index) in menuList" :key="index">
+                    <li v-for="(sub,j) in item" :key="j">
+                      <a v-bind:href="sub?'/#/product/'+sub.id :''">
+                        <img v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
+                        {{sub?sub.name:'小米9'}}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu-item">
                 <a href="javascript:;">笔记本 平板</a>
+                 <div class="children">
+                  <ul v-for="(item,index) in menuList" :key="index">
+                    <li v-for="(sub,j) in item" :key="j">
+                      <a v-bind:href="sub?'/#/product/'+sub.id :''">
+                        <img v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
+                        {{sub?sub.name:'小米9'}}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu-item">
                 <a href="javascript:;">家电 插线板</a>
+                 <div class="children">
+                  <ul v-for="(item,index) in menuList" :key="index">
+                    <li v-for="(sub,j) in item" :key="j">
+                      <a v-bind:href="sub?'/#/product/'+sub.id :''">
+                        <img v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
+                        {{sub?sub.name:'小米9'}}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu-item">
                 <a href="javascript:;">出行 穿戴</a>
+                 <div class="children">
+                  <ul v-for="(item,index) in menuList" :key="index">
+                    <li v-for="(sub,j) in item" :key="j">
+                      <a v-bind:href="sub?'/#/product/'+sub.id :''">
+                        <img v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
+                        {{sub?sub.name:'小米9'}}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu-item">
                 <a href="javascript:;">智能 路由器</a>
+                 <div class="children">
+                  <ul v-for="(item,index) in menuList" :key="index">
+                    <li v-for="(sub,j) in item" :key="j">
+                      <a v-bind:href="sub?'/#/product/'+sub.id :''">
+                        <img v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
+                        {{sub?sub.name:'小米9'}}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu-item">
                 <a href="javascript:;">电源 配件</a>
+                 <div class="children">
+                  <ul v-for="(item,index) in menuList" :key="index">
+                    <li v-for="(sub,j) in item" :key="j">
+                      <a v-bind:href="sub?'/#/product/'+sub.id :''">
+                        <img v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
+                        {{sub?sub.name:'小米9'}}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu-item">
                 <a href="javascript:;">生活 箱包</a>
+                 <div class="children">
+                  <ul v-for="(item,index) in menuList" :key="index">
+                    <li v-for="(sub,j) in item" :key="j">
+                      <a v-bind:href="sub?'/#/product/'+sub.id :''">
+                        <img v-lazy="sub?sub.img:'/imgs/item-box-1.png'" alt />
+                        {{sub?sub.name:'小米9'}}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -99,11 +169,11 @@
     <service-bar></service-bar>
      <modal 
       title="提示" 
-      sureText="查看购物车" 
+      sureText="确定" 
       btnType="1" 
       modalType="middle" 
       v-bind:showModal="showModal"
-      v-on:submit="goToCart"
+      v-on:submit="showModal=false"
       v-on:cancel="showModal=false"
       >
       <template v-slot:body>
@@ -234,9 +304,9 @@ export default {
     addCart(){
       this.showModal=true;
     },
-    goToCart(){
-      this.$router.push('/cart')
-    }
+    // goToCart(){
+    //   this.$router.push('/cart')
+    // }
   }
 };
 </script>
