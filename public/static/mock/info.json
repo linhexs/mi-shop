@@ -1,0 +1,16 @@
+{
+    "status": 0,
+    "data": {
+        "id": 2,
+        "categoryId": 2,
+        "parentCategoryId":1,
+        "name": "oppo R8",
+        "subtitle": "oppo促销进行中",
+        "detail": "richtext",
+        "price": 2999.11,
+        "stock": 71,
+        "status": 1,
+        "createTime": "2020-1-20 14:21:53",
+        "updateTime": "2020-1-20 14:21:53"
+    }
+}

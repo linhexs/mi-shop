@@ -146,23 +146,23 @@ export default {
       },
       slideList: [
         {
-          id: "42",
+          id: "1",
           img: "/imgs/slider/slide-1.jpg"
         },
         {
-          id: "45",
+          id: "2",
           img: "/imgs/slider/slide-2.jpg"
         },
         {
-          id: "46",
+          id: "3",
           img: "/imgs/slider/slide-3.jpg"
         },
         {
-          id: "47",
+          id: "4",
           img: "/imgs/slider/slide-4.jpg"
         },
         {
-          id: "48",
+          id: "5",
           img: "/imgs/slider/slide-5.jpg"
         }
       ],

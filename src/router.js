@@ -37,34 +37,34 @@ export default new Router({
         }
         ]
     }, {
-        path:'/cart',
-        name:'cart',
-        component:Cart
+        path: '/cart',
+        name: 'cart',
+        component: Cart
     },
     {
-        path:'/login',
-        name:'login',
-        component:Login
-    },{
-        path:'/order',
-        name:'order',
-        component:Order,
-        children:[{
-            path:'list',
-            name:'order-list',
-            component:OrderList,
-        },{
-            path:'confirm',
-            name:'order-confirm',
-            component:OrderConfirm,
-        },{
-            path:'pay',
-            name:'order-pay',
-            component:OrderPay,
-        },{
-            path:'alipay',
-            name:'alipay',
-            component:AliPay, 
+        path: '/login',
+        name: 'login',
+        component: Login
+    }, {
+        path: '/order',
+        name: 'order',
+        component: Order,
+        children: [{
+            path: 'list',
+            name: 'order-list',
+            component: OrderList,
+        }, {
+            path: 'confirm',
+            name: 'order-confirm',
+            component: OrderConfirm,
+        }, {
+            path: 'pay',
+            name: 'order-pay',
+            component: OrderPay,
+        }, {
+            path: 'alipay',
+            name: 'alipay',
+            component: AliPay,
         }]
     }
     ]

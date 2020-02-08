@@ -4,7 +4,10 @@ import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import store from './store'
+import { Message } from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import VueLazyLoad from 'vue-lazyload'
+import VueCookie from 'vue-cookie'
 // import env from './env'
 
 axios.defaults.baseURL = '/static/mock/';
@@ -20,16 +23,17 @@ axios.interceptors.response.use(function(response){
     if (path != '#/index'){
       window.location.href = '/#/login';
     }
-      window.location.href = '/#/login';
+      return Promise.reject(res);
   }else{
-    alert(res.msg);
-    return Promise.reject();
+    return Promise.reject(res);
   }
 })
 Vue.use(VueAxios,axios);
+Vue.use(VueCookie);
 Vue.use(VueLazyLoad,{
   loading: '/imgs/loading-svg/loading-bars.svg'
 });
+Vue.prototype.$message = Message;
 Vue.config.productionTip = false;
 
 

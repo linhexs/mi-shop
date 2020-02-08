@@ -53,9 +53,14 @@ export default {
       this.axios.get('/user.json',{
         username,
         password
-      }).then(()=>{
+      }).then((res)=>{
+        this.saveUserName(res.username);
+         this.$cookie.set('userId',res.id,{expires:'Session'});
         this.$router.push({
           name:'index',
+           params:{
+            from:'login'
+          }
         });
       })
     },
