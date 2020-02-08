@@ -21,9 +21,13 @@
 
 ### ScreenShot
 
+![](https://raw.githubusercontent.com/linhexs/blogImage/master/mi-shop/%E9%A6%96%E9%A1%B5.png)
+
 ![](https://raw.githubusercontent.com/linhexs/blogImage/master/mi-shop/%E4%BA%A7%E5%93%81%E7%AB%99.png)
 
 ![](https://raw.githubusercontent.com/linhexs/blogImage/master/mi-shop/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85.png)
+
+![](http://raw.githubusercontent.com/linhexs/blogImage/master/mi-shop/%E7%99%BB%E5%BD%95.png)
 
 ### Build Setup
 
